@@ -1,3 +1,34 @@
 * {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+
+}
+
+#profile-pic {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.image-thumbnail {
+    width: 200px;
+    height: 200px;
 }
