@@ -7,11 +7,11 @@
     </head>
     <body>
 	    <header>
-            <div>
+            <div id="header">
                 <h1>Devin Little's Project Portfolio</h1>
             </div>
             <nav>
-                <div>
+                <div id="nav-bar">
                     <ul>
                         <li><a href="#about-me">About Me</a></li>
                         <li><a href="#work">Work</a></li>    
@@ -21,19 +21,29 @@
                 </div>
             </nav>
         </header>
-        <div id="about-me">
+        <div id="about-me" class="section-1">
             <h2>About Me</h2>
             <img src="assets/images/profile-pic.jpg" alt="Profile picture of Devin Little" id="profile-pic">
             <p>My name is Devin Little. I am a full stack software   developer from Saint Louis, MO. This portfolio was originally a student project assigned to me during my time at the Washington University Coding Bootcamp. It was meant to showcase the functionality of advanced CSS. Now, it houses all of my notable and favorite projects to showcase my prowess as a developer. I hope you enjoy what you find as much as it was creating this webpage.</p>
         </div>
-        <div id="work">
+        <div id="work" class="section-2">
             <h2>My Projects</h2>
-	    <ul>
-            <li><img src="assets/images/prework-study-guide-ss.png" class="image-thumbnail"></li>
-            <li><img src="assets/images/horiseon-code-refactor-ss.png" class="image-thumbnail"></li>
-        </ul>
+	        <ul>
+                <li>
+                    <img src="assets/images/prework-study-guide-ss.png" class="image-thumbnail">
+                    <div class="image-text">Prework Study Guide</div>
+                </li>
+                <li>
+                    <img src="assets/images/horiseon-code-refactor-ss.png" class="image-thumbnail">
+                    <div class="image-text">Horiseon Code Refactor</div>
+                </li>
+                <li>
+                    <img src="assets/images/coming-soon-image.jpg" class="image-thumbnail">
+                    <div class="image-text">Week 4 Project</div>
+                </li>
+            </ul>
         </div>
-        <div id="contact-me">
+        <div id="contact-me" class="section-3">
             <h2>Contact Me</h2>
             <ul>
 		        <li>Phone Number: 314-562-1619</li>
@@ -42,8 +52,9 @@
             </ul>
         </div>
 	    <footer>
-	        <div>
+	        <div class="section-4">
                 <h2>Thank you for visiting!</h2>
+                <p>&copy; 2023 Devin Little</p>
             </div>
         </footer>
     </body>
