@@ -67,6 +67,59 @@ a {
     
 }
 
+
+#image-thumbnail-1 {
+    width: 650px;
+    height: 600px;
+    border: 5px solid #cc5500;
+    position: relative;
+    top: 10px;
+}
+
+#image-thumbnail-2 {
+    width: 500px;
+    height: 300px;
+    border: 5px solid #cc5500;
+    position: relative;
+    top: -290px;
+    left: 5px;
+}
+
+#image-thumbnail-3 {
+    width: 500px;
+    height: 300px;
+    border: 5px solid #cc5500;
+    position: relative;
+    top: -325px;
+    right: -685px;
+}
+
+#image-text-1 {
+    position: relative;
+    top: -25px;
+    background-color: #cc5500;
+    color: white;
+    padding: 10px 0px 10px 10px;
+}
+
+#image-text-2 {
+    position: relative;
+    top: -330px;
+    left: 5px;
+    background-color: #cc5500;
+    color: white;
+    padding: 10px 0px 10px 10px;
+}
+
+#image-text-3 {
+    position: relative;
+    top: -370px;
+    right: -685px;
+    background-color: #cc5500;
+    color: white;
+    padding: 10px 0px 10px 10px;
+}
+
 .section-1 {
     margin: 20px;
     height: 300px;
@@ -97,36 +150,11 @@ a {
     font-size: 10px;
 }
 
-.image-thumbnail {
-    width: 500px;
-    height: 300px;
-    border: 5px solid #cc5500;
-    position: absolute;
-}
-
-.image-text {
-    position: relative;
-    background-color: #cc5500;
-    color: white;
-    margin-right: auto;
-    padding: 10px;
-}
-
-.nav-bar-list {
-    float: right;
-}
-
 .background-image {
     background-image: url(../images/louisiana-swamp.jpg);
     background-size: cover;
     height: 700px;
     margin-left: 20px;
     margin-right: 20px;
-
-}
-
-.about-me-paragraph {
-    padding-left: 10px;
-    padding-right: 10px;
 
 }
