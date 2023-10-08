@@ -9,6 +9,7 @@
 /* Element selectors */
 body {
     background-color: #fffdd0;
+    line-height: 2;
 
 }
 
@@ -16,7 +17,7 @@ p {
     font-size: 20px;
     flex-wrap: wrap;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 4%;
 }
 
 h1 {
@@ -25,11 +26,16 @@ h1 {
 }
 
 h2 {
-    font-weight: bolder;
     font-size: 40px;
     padding: 0;
     margin: 0;
-    border-left: 10px solid #cc5500;
+    text-align: center;
+    color:#fffdd0;
+    background-color: #cc5500;
+}
+
+h3 {
+    font-size: 20px;
 }
 
 ul {
@@ -37,7 +43,6 @@ ul {
 }
 
 li {
-    display: inline-block;
     margin-left: 25px;
     color: white;
 }
@@ -47,11 +52,33 @@ a {
     color: white;
 }
 
+figure {
+    width: 100%;
+    position: relative;
+}
+
+
+figcaption {
+    background-color: #cc5500;
+    padding: 10px;
+    position: absolute;
+    bottom: 30px;
+}
+
 /* Id Selectors */
+#container {
+    width: 92%;
+    padding-bottom: 120px;
+    margin: 40px auto 0px auto;
+    display: grid;
+    grid-template-columns: 16% 76%;
+    gap: 4%;
+}
+
 #header {
     padding: 20px;
     background-color: #304529;
-    color: white;
+    color: #fffdd0;
 }
 
 #nav-bar {
@@ -63,84 +90,39 @@ a {
 #profile-pic {
     border-radius: 50%;
     width: 200px;
-    height: 200px;
-    float: left;
-    margin-top: 25px;
-    margin-left: 25px;  
-}
-
-#image-thumbnail-1 {
-    width: 650px;
-    height: 600px;
+    margin: 2% 2% 1% 2%;
     border: 5px solid #cc5500;
-    position: relative;
-    top: 10px;
+    float: left; 
 }
 
-#image-thumbnail-2 {
-    width: 500px;
-    height: 300px;
-    border: 5px solid #cc5500;
-    position: relative;
-    top: -290px;
-    left: 5px;
-}
-
-#image-thumbnail-3 {
-    width: 500px;
-    height: 300px;
-    border: 5px solid #cc5500;
-    position: relative;
-    top: -325px;
-    right: -685px;
-}
-
-#image-text-1 {
-    position: relative;
-    top: -25px;
-    background-color: #cc5500;
-    color: white;
-    padding: 10px 0px 10px 10px;
-}
-
-#image-text-2 {
-    position: relative;
-    top: -330px;
-    left: 5px;
-    background-color: #cc5500;
-    color: white;
-    padding: 10px 0px 10px 10px;
-}
-
-#image-text-3 {
-    position: relative;
-    top: -370px;
-    right: -685px;
-    background-color: #cc5500;
-    color: white;
-    padding: 10px 0px 10px 10px;
-}
 
 #section-1 {
-    margin: 20px;
-    height: 300px;
     background-color: #7B3F00;
     color: white;
 }
 
 #section-2 {
-    margin-top: 20px;
-    margin-left: 100px;
-    margin-right: 125px;
-    margin-bottom: 20px;
-    height: 680px;
-    background-color: #808000;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 410px 210px 210px;
+    grid-template-areas: 
+        "p0 p0"
+        "p1 p2"
+        "p3 p4";
+    gap: 20px;
     color: white;
 }
 
+#section-2 img {
+    object-fit: cover;
+    width: 100%;
+    filter: sepia(30%);
+    border: 5px solid #cc5500;
+    opacity: 100%;      
+}
+
 #section-3 {
-    margin: 20px;
-    height: 50px;
     background-color: #C2B280;
     color: white;
     text-align: center;
@@ -154,34 +136,42 @@ a {
 #background-image {
     background-image: url(../images/louisiana-swamp.jpg);
     background-size: cover;
-    height: 700px;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 /* Class Selectors */
+
+
 .image-container {
     position: relative;
     display: inline-block;
   }
   
-  .hover-image {
-    transition: opacity 0.3s ease-in-out;
+.hover-image {
+    transition: transform 0.3s ease;
   }
   
-  .hover-image:hover {
-    opacity: 0.8;
-    background-color: white;
+.hover-image:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    opacity: 20%;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav a {
+  font-size: 24px;
+}
+
+.p0 {
+    grid-area: p0;
   }
-
-
-@media screen and (max-width: 768px) {
-header {
-    flex-direction: column;
-}
-  
-main {
-    max-width: 1200px;
-}
+.p1 {
+    grid-area: p1;
+  }
+.p2 {
+    grid-area: p2;
 }
   
