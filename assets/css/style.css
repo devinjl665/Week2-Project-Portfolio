@@ -1,16 +1,35 @@
 /* Universal Selector */
 * {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 /* Element selectors */
 body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #fffdd0;
     line-height: 2;
+    display: block;
 
+}
+
+header {
+    background-color: #304529;
+    color: #fffdd0;
+}
+
+nav {
+    background-color: #228B22;
+    text-align: right;
+
+}
+
+nav a {
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
 }
 
 p {
@@ -22,11 +41,12 @@ p {
 
 h1 {
     display: inline-block;
-    font-size: 48px;
+    font-size: 40px;
+    margin-left: 20px;
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 30px;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -36,18 +56,17 @@ h2 {
 
 h3 {
     font-size: 20px;
-}
-
-ul {
-    list-style-type: none;
+    text-align: center;
 }
 
 li {
-    margin-left: 25px;
     color: white;
+    text-decoration: none;
+    display: block;
+    justify-content: space-between;
 }
 
-a {
+li a {
     text-decoration: none;
     color: white;
 }
@@ -75,18 +94,6 @@ figcaption {
     gap: 4%;
 }
 
-#header {
-    padding: 20px;
-    background-color: #304529;
-    color: #fffdd0;
-}
-
-#nav-bar {
-    background-color: #228B22;
-    text-align: right;
-    padding-right: 25px;
-}
-
 #profile-pic {
     border-radius: 50%;
     width: 200px;
@@ -99,6 +106,7 @@ figcaption {
 #section-1 {
     background-color: #7B3F00;
     color: white;
+    margin-top: 20px;
 }
 
 #section-2 {
@@ -131,12 +139,20 @@ figcaption {
 #section-4 {
     text-align: center;
     font-size: 10px;
+    color: #7B3F00;
 }
 
 #background-image {
     background-image: url(../images/louisiana-swamp.jpg);
     background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
 }
+
+#about-me {
+    margin-top: 20px;
+}
+
 
 /* Class Selectors */
 
@@ -156,10 +172,6 @@ figcaption {
     opacity: 20%;
 }
 
-.nav {
-    display: flex;
-    justify-content: flex-end;
-}
 
 .nav a {
   font-size: 24px;
@@ -174,4 +186,70 @@ figcaption {
 .p2 {
     grid-area: p2;
 }
-  
+
+
+
+
+
+@media screen and (max-width: 900px) {
+
+    header {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0;
+      }
+    
+    header h1 {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+      }
+
+    li{
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #container {
+        width: 95%;
+        display: grid;
+        grid-template-columns: 100%;
+      }
+    
+    #section-2 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 200px 200px 200px 200px;
+        grid-template-areas:
+          "p0"
+          "p1"
+          "p2";
+      }
+
+    #section-2 img {
+        height: 190px;
+      }
+
+    #section-3 {
+        text-align: center;
+    }
+
+    .p0 {
+        grid-area: p0;
+      }
+    .p1 {
+        grid-area: p1;
+      }
+    .p2 {
+        grid-area: p2;
+      }
+
+
+}
