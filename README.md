@@ -6,6 +6,7 @@ This a portfolio of the projects I worked on since I started my full stack devel
 
 ## Demo
 
+![demo-gif](https://github.com/devinjl665/Week2-Project-Portfolio/assets/142193870/304ed505-3d86-4812-99ac-ba20a387294a)
 
 
 ## Site Link
