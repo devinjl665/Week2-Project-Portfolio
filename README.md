@@ -2,12 +2,11 @@
 
 ## Description
 
-This a portfolio of the projects I worked on since I started my full stack developer journey
+This is a portfolio of the projects I worked on since I started my full stack developer journey. This began as a homework assignment to create a website portfolio that encapsulated what I learned after two weeks of Bootcamp: HTML and advanced CSS. I plan to keep updating and adding more features to my portfolio as I gain more knowledge and understanding of software development!
 
 ## Demo
 
 ![demo-gif](https://github.com/devinjl665/Week2-Project-Portfolio/assets/142193870/304ed505-3d86-4812-99ac-ba20a387294a)
-
 
 ## Site Link
 
@@ -15,24 +14,24 @@ This a portfolio of the projects I worked on since I started my full stack devel
 
 ## Usage
 
-
+Click on the buttons in the navigation bar to go to the corresponding section of the portfolio. Hover over the project thumbnails and click on the project you would like to see. 
 
 ## Credits
 
-
+I referenced Anton Yosifov's github repository "Portfolio Template Lernantino" for reference when I got stuck or when I was trying to recreate the thumbnail layout. Repository is linked here: <a href="https://github.com/apyosi/Portfolio-Template-Lernantino">Anton's Portfolio Repository</a>
 
 ## User Story
 
-As an employer I want to view a potential employee's deployed portfolio of work samples so that I can review samples of their work and assess whether they're a good candidate for an open position
+As a bootcamp student I want to show a potential employer my deployed portfolio of work samples so that they can be reviewed and show my qualifications for an open position
 
 
 ## Acceptance Criteria
 
-GIVEN I need to sample a potential employee's previous work
+GIVEN I need to have a sample of my previous work
 
-WHEN I load their portfolio
+WHEN I load my portfolio
 
-THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+THEN I am presented with my name, a recent photo or avatar, and links to sections about me, my work, and how to contact me
 
 WHEN I click one of the links in the navigation
 
@@ -42,7 +41,7 @@ WHEN I click on the link to the section about their work
 
 THEN the UI scrolls to a section with titled images of the developer's applications
 
-WHEN I am presented with the developer's first application
+WHEN I am presented with the my first application
 
 THEN that application's image should be larger in size than the others
 
