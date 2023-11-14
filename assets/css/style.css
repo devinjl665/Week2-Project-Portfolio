@@ -76,7 +76,7 @@ figure {
     position: relative;
 }
 
-
+/* Caption for the thumbnails */
 figcaption {
     background-color: #cc5500;
     padding: 10px;
@@ -108,7 +108,7 @@ figcaption {
     color: white;
     margin-top: 20px;
 }
-
+/* Creates a grid templates that allows for the style of the thumbnails */
 #section-2 {
     width: 100%;
     display: grid;
@@ -142,6 +142,7 @@ figcaption {
     color: #7B3F00;
 }
 
+/* Creates a background image that is fixed so it appears to be behind the moving elements of the webpage */
 #background-image {
     background-image: url(../images/louisiana-swamp.jpg);
     background-size: cover;
@@ -165,7 +166,8 @@ figcaption {
 .hover-image {
     transition: transform 0.3s ease;
   }
-  
+
+/* Causes images to expand upon hover */
 .hover-image:hover {
     transform: scale(1.1);
     cursor: pointer;
@@ -189,10 +191,10 @@ figcaption {
 
 
 
-
+/* Media Query for screens with a max-width up to 768px */
 
 @media screen and (max-width: 768px) {
-
+    /* Header centers when viewport size decreases */
     header {
         display: flex;
         align-items: center;
@@ -210,7 +212,7 @@ figcaption {
     li{
         text-align: center;
     }
-
+    /* Causes nav bar to stack when viewport decreases in size */
     nav {
         display: flex;
         flex-direction: column;
@@ -232,7 +234,8 @@ figcaption {
           "p1"
           "p2";
       }
-
+    
+    /* Makes the images in section a equal in size when viewport size decreases */
     #section-2 img {
         height: 190px;
       }
@@ -241,6 +244,7 @@ figcaption {
         text-align: center;
     }
 
+    /* Makes the grid a single row when viewport size descreases */
     .p0 {
         grid-area: p0;
       }
